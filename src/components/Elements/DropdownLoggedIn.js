@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import { logout } from "../../services";
+import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
 import { getUser } from "../../services";
-import { toast } from "react-toastify";
+
 
 export const DropdownLoggedIn = ({ setDropDown }) => {
     const navigate = useNavigate();
